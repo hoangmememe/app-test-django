@@ -1,0 +1,16 @@
+<!-- templates/home.html -->
+
+{% extends 'home.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-10 offset-md-1">
+{% load static %}
+            <a href="{% url 'create' %}">
+    <img src="{% static 'map.png' %}" alt="My image" width="900px" height="500">
+                </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
