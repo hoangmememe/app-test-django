@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure--bkt@!az_mdo-9qgj@4cc((k&ib#)hcc1k+2^mi$7dal^=$3eb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -128,7 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -147,8 +147,8 @@ LOGOUT_URL = 'logout'
 LOGOUT_REDIRECT_URL = 'login'
 
 
-SOCIAL_AUTH_FACEBOOK_KEY = '600216804527745'        # App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '8afbae9d21e8d21ace6ebd8b199affe1'  # App Secret
+SOCIAL_AUTH_FACEBOOK_KEY = '149570610723947'        # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '3139830511a376e4a1929baa4e454511'  # App Secret
 
 SOCIAL_AUTH_FACEBOOK_SCOPE = []
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
